@@ -1,0 +1,14 @@
+{
+  "name": "clase-11",
+  "version": "1.0.0",
+  "description": "Ejercicio html, replica mercado libre",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcos Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
