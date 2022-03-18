@@ -2,13 +2,13 @@ const express = require("express");
 const app = express();
 const path = require('path');
 
+app.use(express.static("public"));
+
 app.listen(3030, () => 
     console.log("Operación exitosa.")
 );
 
-app.get("/", (req,res) => {
-    res.sendFile(path.join(__dirname, "./views/index.html"));
-});
+app.get("/", (req,res) => {res.sendFile(path.join(__dirname, "./views/index.html"));});
 
 app.get("/lovelace", (req,res) => {res.sendFile(path.join(__dirname, "./views/lovelace.html"));});
 app.get("/turing", (req,res) => {res.sendFile(path.join(__dirname, "./views/turing.html"));});
