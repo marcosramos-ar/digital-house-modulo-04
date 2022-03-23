@@ -39,3 +39,7 @@ header {
 .top-header p {
     text-align: center;
 }
+
+.icono {
+    border: red;
+}
